@@ -1,0 +1,41 @@
+<html lang="en">  
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!-- Header Section -->
+    <special-header></special-header>
+    <script src = "header_footer.js"></script>
+
+    <!-- Body Section -->
+    <body>
+
+    <!-- Project Experience Section-->
+    <h1 class="theme-heading">Project Experience</h1>
+        <!-- PIV Project -->
+        <h2 class="theme-subheading">Particle Image Velocimetry (PIV)</h2> 
+        <h3 class="theme-paragraph">
+            
+        <div id="main_project_PIV">Loading content...</div>
+        <script>
+            fetch("content/main_project_PIV.txt")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("main_project_PIV").innerText = data; 
+            })
+            .catch(error => {
+                document.getElementById("main_project_PIV").innerText = "Error loading content.";
+                console.error(error);
+            });
+        </script>
+        </h3>
+        </h2>
+    <!-- Work Experience Section-->
+
+    <!-- Hobbies Section-->
+
+    </body>
+
+    <!-- Footer Section -->
+    <special-footer></special-footer>
+    <script src = "header_footer.js"></script>
+</html>
