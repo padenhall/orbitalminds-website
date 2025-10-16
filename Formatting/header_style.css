@@ -1,0 +1,193 @@
+/* Page Style */
+body{
+    font-size: airal;
+    background-size: cover;
+    background-color: black;
+    
+}
+
+header {
+    text-align: center;
+    text-decoration: none;
+}
+
+/* Header Stle */
+/* h1.theme-header {
+Write Code Here
+} */
+
+/*Footer Style*/
+h1.theme-footer {
+    font-size: 1rem;
+    color: rgb(226, 182, 4);
+    text-align: left; 
+    margin-left: 3rem;
+}
+/* Footer List Styles */
+/* .theme-footer ul.theme-footer{
+    text-align: center;
+    color: yellow;
+} */
+.theme-footer p.theme-footer{
+    list-style: none;    /*removes bullets*/
+    display: flex;       /*puts in a row */
+    gap: 2rem ; /* puts a gap in between tabs */
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    margin-left: 1rem;
+}
+
+/* Navigation Bar Style */
+nav ul.theme-header {
+    list-style: none;    /*removes bullets*/
+    display: flex;       /*puts in a row */
+    gap: 2rem ; /* puts a gap in between tabs */
+    text-decoration: none;
+    align-items: center;
+}
+
+/* Orbital Minds Theme Left-Corner */
+.theme-header a.specialheading{
+    list-style: none;    /*removes bullets*/
+    display: flex;       /*puts in a row */
+    gap: 2rem ; /* puts a gap in between tabs */
+    text-decoration: none;
+    font-size: 5rem;
+    color: rgb(226, 182, 4);
+}
+
+/* NavBar Styles */
+.theme-header a.navbar{
+    list-style: none;    /*removes bullets*/
+    display: flex;       /*puts in a row */
+    gap: 2rem ; /* puts a gap in between tabs */
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    border-color:rgb(226, 182, 4);
+    border: 1;
+}
+
+ul.theme-body {
+    list-style: none;
+    display: flex; 
+    gap: 3rem; 
+}
+
+
+
+/* Project Experience H1 Tag Style */
+h1.theme-heading{
+    text-align: left;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 0.5rem;
+    color: rgb(226, 182, 4);
+}
+
+h2.theme-subheading {
+    text-align: left;
+    margin-left: 3rem;
+    font-size: 1.6rem;
+    color: rgb(226, 182, 4);
+    padding: 0.5rem; 
+}
+
+h3.theme-paragraph{
+    justify-content: left;
+    text-wrap: initial;
+    font-weight: 100;
+    font-size: 0.9rem;
+    color: white;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-top: 0rem;
+    border-radius: 2rem;
+    padding: 0.01rem;
+    background-color: #d4a017;
+    background-size: cover;
+}
+/* Floating Affect on h3 tag */
+
+.heading-link {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+    transition: transform 0.2s ease;
+    color: rgb(255, 255, 255);
+    text-align: left;
+    background-color: #30322f;
+    padding: 10px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    font-weight: 100;
+}
+
+.heading-link:hover {
+    transform: scale(1.05);
+    color: #FFD700;
+}
+/* Link Theme */
+a {
+    font-size: 1.125rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    color: red;
+}
+
+.two-column {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  margin: 3rem 0;
+
+}
+
+.column {
+  flex: 1;
+}
+
+.theme-subheading {
+  color: #d4a017;
+  font-weight: bold;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #d4a017;
+  padding-bottom: 5px;
+}
+
+.theme-paragraph, 
+.column div {
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-item {
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.project-item:hover {
+    transform: scale(1.5);
+}
+
+.project-image {
+    width: 150;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 100px 100px 100px rgba(0, 0, 0, 0.2);
+}
