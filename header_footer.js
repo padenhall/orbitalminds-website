@@ -5,8 +5,8 @@ class SpecialHeader extends HTMLElement {
         ` 
         <nav>
             <ul class="theme-header">
-                <li><a class="specialheading" href ="Orbital Minds.html"> Orbital Minds </a></li>
-                <li><a class="navbar" href ="Work.html"> Work </a></li>
+                <li><a class="specialheading" href ="index.html"> Orbital Minds </a></li>
+                <li><a class="navbar" href ="work.html"> Work </a></li>
                 <li><a class="navbar" href ="Projects.html"> Projects </a></li>
                 <li><a class="navbar" href ="Research.html"> Research </a></li>
                 <li><a class="navbar" href ="Resume.html"> Resume </a></li>
@@ -33,3 +33,4 @@ class SpecialFooter extends HTMLElement {
 }
 customElements.define('special-header', SpecialHeader)
 customElements.define('special-footer', SpecialFooter)
+
