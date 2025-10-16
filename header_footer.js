@@ -2,13 +2,15 @@
 class SpecialHeader extends HTMLElement {
     connectedCallback(){
         this.innerHTML = 
-        `
-        <h1 class="theme-header">Orbital Minds</h1> 
+        ` 
         <nav>
             <ul class="theme-header">
-            <li></li><a href ="Home.html"> Home </a>
-            <li></li><a href ="About.html"> About </a>
-            <li></li><a href ="Contact.html"> Contact</a>
+                <li><a class="specialheading" href ="Orbital Minds.html"> Orbital Minds </a></li>
+                <li><a class="navbar" href ="Work.html"> Work </a></li>
+                <li><a class="navbar" href ="Projects.html"> Projects </a></li>
+                <li><a class="navbar" href ="Research.html"> Research </a></li>
+                <li><a class="navbar" href ="Resume.html"> Resume </a></li>
+                <li><a class="navbar" href ="About.html"> About/Contact </a></li>
             </ul>  
         </nav>
         <link rel="stylesheet "href="Formatting/header_style.css">
@@ -21,9 +23,9 @@ class SpecialFooter extends HTMLElement {
     connectedCallback(){
         this.innerHTML = 
         `
-        <h1 class="theme-footer">Contact Information</h1>
+        <h1 class="theme-footer">Information Location</h1>
         <ul class="theme-footer">
-            <p>Orbital Minds | Aerospace Manufacturing & Engineering | Pomona, CA | </p>
+            <p class="theme-footer">Orbital Minds | Aerospace Manufacturing & Engineering | Pomona, CA | BS Aerospace Engineer| Cal Poly Pomona Alumni </p>
         </ul>  
         <link rel="stylesheet "href="Formatting/footer_style.css"> 
         `
