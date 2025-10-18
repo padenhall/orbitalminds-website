@@ -1,0 +1,93 @@
+<html lang="en">  
+    <meta charset="UTF-8">
+    <title>Work | Orbital Minds</title>
+
+    <!-- Header Section -->
+    <special-header></special-header>
+    <script src = "header_footer.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/showdown/dist/showdown.min.js"></script>
+    
+    <!-- Body Section -->
+    <body>
+        <!-- Page Title-->
+    <h1 class="theme-heading">Research... aka my Personal Projects</h1>
+    <div class="accordion">
+    <!-- Header for Drop Down-->
+    <div class="accordion-item">
+        <button class="accordion-header">
+        TBD <span class="arrow">&#9662;</span>
+        </button>
+    <!-- Content Inside Dropdown-->
+    <div class="accordion-content">
+        <h3>
+            <span id="research/">Loading content...</span>
+        </h3>
+    </div>
+    </div>
+
+    <!--Format goes down the same for future items-->
+    <div class="accordion-item">
+        <button class="accordion-header">
+        TBD <span class="arrow">&#9662;</span>
+    </button>
+     <!-- Content Inside Dropdown-->
+    <div class="accordion-content">
+        <h3>
+            <span id="research/">Loading content...</span>
+        </h3>
+    </div>
+    </div>
+
+    <!-- Script for the body content-->
+    <script>
+    const contentFiles = {
+        work_Lucix: "content/work_Lucix.md",
+        work_PBF: "content/work_PBF.md",
+    };
+
+    const converter = new showdown.Converter(); // Markdown converter (only used when needed)
+
+    for (const [id, path] of Object.entries(contentFiles)) {
+        fetch(path)
+        .then(res => res.text())
+        .then(data => {
+            const isMarkdown = path.endsWith(".md");
+            const output = isMarkdown ? converter.makeHtml(data) : data;
+            // Use innerHTML for both (safe since you control the files)
+            document.getElementById(id).innerHTML = output;
+        })
+        .catch(err => {
+            document.getElementById(id).innerText = "Error loading content.";
+            console.error(`Error loading ${path}:`, err);
+        });
+    }
+    </script>
+
+    <!-- Script for the header and footer-->
+    <script>
+    const headers = document.querySelectorAll(".accordion-header");
+
+    headers.forEach(header => {
+    header.addEventListener("click", () => {
+        const content = header.nextElementSibling;
+        const isOpen = content.classList.contains("open");
+
+        // Close all
+        document.querySelectorAll(".accordion-content").forEach(c => c.classList.remove("open"));
+        document.querySelectorAll(".accordion-header").forEach(h => h.classList.remove("active"));
+
+        // Toggle current
+        if (!isOpen) {
+        content.classList.add("open");
+        header.classList.add("active");
+        }
+    });
+    });
+    </script>
+
+    </body>
+
+    <!-- Footer Section -->
+    <special-footer></special-footer>
+    <script src = "header_footer.js"></script>
+</html>

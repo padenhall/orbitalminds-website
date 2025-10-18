@@ -1,0 +1,37 @@
+body{
+    font-size: sans-serif;
+    background-color: rgb(117, 140, 231);
+    background-size: cover;
+
+}
+
+header {
+    text-align: center;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Arial,sans-serif;
+    text-align: left;
+    font-size: 3rem;
+    color: #020202; 
+}
+nav ul {
+
+    list-style: none;    /*removes bullets*/
+    display: flex;       /*puts in a row */
+    gap: 2rem ; /* puts a gap in between tabs */
+    text-decoration: none;
+}
+h2{
+    text-align: left;
+}
+a {
+    font-size: 1.125rem;
+    font-family: sans-serif;
+    font-weight: bold;
+    color:black; 
+}
+
+
+
